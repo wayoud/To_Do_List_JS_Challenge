@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("/fonts/Cairo\ V2.woff");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Condensed&display=swap');
+  body {
+      /* font-family: 'MyFont'; */
+      font-family: 'Quicksand', sans-serif;
+      /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+      background-color:#eee ;
+      font-weight: 700;
+      font-size: 11px;
+      color: slategrey;
+    }
+    .background {
+      height: 180px;
+      width: 75%;
+      margin-inline: auto;
+      /* background-image: url(images/composing-fantasy-mood-star-landscape-background-planet-sience-fiction-space.jpg); */
+      background-image: url(images/mountains.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      
+  
+    }
+    .container {
+      width: 500px;
+      margin:auto;
+    }
+    .form {
+      border-radius: 4px;
+      padding: 20px;
+      display: block;
+      margin: auto;
+      width: 450px;
+      align-items: center;
+    }
+    .form::before {
+   content: 'TODO';
+   display: block;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   margin-inline-start: 54px;
+   color: white;
+   font-weight: 700;
+   font-size: 26px;
+   letter-spacing: 10px;
+  
+  
+    }
+    .input {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      flex: 1;
+      width: 70%;
+      height: 22px;
+   margin-inline: auto;
+   display: block;
+    }
+    .input[placeholder]{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+    }
+    .input:focus {
+      outline: none;
+    }
+    /* .tasks .task::after {
+      font-family: "Material Icons";
+      content: "clear";
+      font-size: 20px;
+      font-weight: 100;
+      
+    } */
+    .add {
+      border: none;
+      background-color: #f44336;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .tasks {
+      background-color: #eee;
+      border-radius: 6px;
+      margin-inline-start: 80px;
+      width: 68%;
+      /* border: solid #ddd ; */
+      box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .tasks .task {
+      background-color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      height: 25px;
+      padding-inline-start: 33px;
+      position:  relative;
+  
+    }
+  
+    .tasks .task:first-child{
+      border-radius: 6px 6px 0 0 ;
+    }
+    .tasks .task:last-child{
+      border-radius: 0 0 6px 6px ;
+    }
+  
+    .tasks .task:hover {
+      background-color: #f7f7f7;
+    }
+    .tasks .task.done {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+    .tasks .task.done::before {
+      content: url(images/tick.png);
+      height: 15px;
+      width: 7px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      left: 4px;
+      top: 10px;
+      opacity: 1;
+  
+      
+    }
+    .tasks .task::before {
+      content: url(images/ellipse.png);
+      height: 15px;
+      width: 7px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      left: 4px;
+      top: 11px;
+      opacity: 1;
+  
+      
+    }
+  
+    .tasks .task span{
+      font-weight: bold;
+      font-size: 20px;
+      color: gray;
+      padding: 2px 6px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+  
+  #darkmode{
+    position: absolute;
+    top: 9%;
+    left: 60%;
+    right: 50%;
+  }
+  
+  .filter {
+    text-align: center;
+  }
+  .filter button{
+    margin: 1%;
+    border-radius: 15%;
+    width: 14%;
+    cursor: pointer;
+  }
+  .filter button:hover{
+    width: 17%;
+    transition-duration: 0.5s;
+  }
+  
+  .filter button#all {
+    background-color: rgb(39, 184, 189);
+    border-color: rgb(39, 184, 189);;
+  }
+  .filter button#todo {
+    background-color: #95ff3d;
+    border-color: #95ff3d;
+  }
+  .filter button#done {
+    background-color: #f5f526;
+    border-color: #f5f526;
+  
+  }
+  .filter button#clear{
+    background-color: #ff5e5e;
+    border-color: #ff5e5e;
+  }
+
+  .container p {
+    text-align: center;
+    font-size: initial;
+  }
+    
